@@ -10,15 +10,21 @@
       <v-spacer></v-spacer>
     </v-app-bar>
     <v-content>
+      <SideNav/>
     </v-content>
   </v-app>
 </template>
 
 <script>
-export default {
-  name: 'App',
-  data: () => ({
-    //
-  }),
-};
+  import SideNav from './components/SideNav'
+
+  export default {
+    name: 'App',
+    components: {
+      SideNav
+    },
+    data: () => ({
+      //
+    }),
+  };
 </script>
